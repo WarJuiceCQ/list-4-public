@@ -5,7 +5,7 @@
 void main()
 {
 	/* */
-	struct list *l;
+	struct doubly_linked_list *l;
 	l = create_list();
 
 	/* operations */
