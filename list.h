@@ -4,21 +4,23 @@
 
 struct node {
 	T data;
+
+	struct node *prev;
 	struct node *next;
 };
 
-struct singly_linked_list {
-	struct node *head;
-	//struct node *tail;
-	int count;
+struct doubly_linked_list {
+    struct node *head;
+    struct node *tail;
+    int counter;
 };
 
-struct singly_linked_list *create_list();
+struct doubly_linked_list *create_list();
 
-struct singly_linked_list *insert(struct singly_linked_list *t, int i, T e);
-struct singly_linked_list *delete_at(struct singly_linked_list *t, int i);
+struct doubly_linked_list *insert(struct doubly_linked_list *t, int i, T e);
+struct doubly_linked_list *delete_at(struct doubly_linked_list *t, int i);
 
-int size( struct singly_linked_list *t );
-T get( struct struct singly_linked_list *t, int i );
-void replace( struct singly_linked_list *t, int i, T e );
-int index( struct singly_linked_list *t, T e );
+int size( struct doubly_linked_list *t );
+T get( struct struct doubly_linked_list *t, int i );
+void replace( struct doubly_linked_list *t, int i, T e );
+int index( struct doubly_linked_list *t, T e );
