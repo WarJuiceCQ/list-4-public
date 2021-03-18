@@ -5,7 +5,7 @@
 #include "list.h"
 
 
-struct singly_linked_list *init_list( struct singly_linked_list *t )
+struct doubly_linked_list *init_list( struct doubly_linked_list *t )
 {
 	t->head = NULL;
 	t->tail = NULL;
@@ -14,9 +14,9 @@ struct singly_linked_list *init_list( struct singly_linked_list *t )
 	return t;
 }
 
-struct singly_linked_list *create_list()
+struct doubly_linked_list *create_list()
 {
-    struct singly_linked_list *t = (struct singly_linked_list *)malloc( sizeof(struct singly_linked_list) );
+    struct doubly_linked_list *t = (struct doubly_linked_list *)malloc( sizeof(struct doubly_linked_list) );
 
 	return init_list( t );
 }
