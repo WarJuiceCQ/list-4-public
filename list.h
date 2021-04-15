@@ -21,6 +21,6 @@ struct doubly_linked_list *insert(struct doubly_linked_list *t, int i, T e);
 struct doubly_linked_list *delete_at(struct doubly_linked_list *t, int i);
 
 int size( struct doubly_linked_list *t );
-T get( struct struct doubly_linked_list *t, int i );
+T get( struct doubly_linked_list *t, int i );
 void replace( struct doubly_linked_list *t, int i, T e );
 int index( struct doubly_linked_list *t, T e );
